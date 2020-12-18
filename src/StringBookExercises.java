@@ -45,13 +45,13 @@ public class StringBookExercises {
 
     public static String convertDate(String dateStr)
     {
-        return dateStr.substring(3,6) + dateStr.substring(0,3) + dateStr.substring(6);
+        return dateStr.substring(3,5) + "-" + dateStr.substring(0,2) + "-" + dateStr.substring(6);
     }
 
     public static String convertDate2(String ds)
     {
-        String month = ds.substring(0, ds.indexOf("/")+1);
-        String day = ds.substring(ds.indexOf("/") + 1, ds.lastIndexOf("/")+1);
+        String month = ds.substring(0, ds.indexOf("/")) + "-";
+        String day = ds.substring(ds.indexOf("/") + 1, ds.lastIndexOf("/")) + "-";
         String year = ds.substring(ds.lastIndexOf("/")+1);
         return day + month + year;
     }
