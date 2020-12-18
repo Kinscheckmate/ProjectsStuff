@@ -53,6 +53,8 @@ public class StringBookExercises {
         String month = ds.substring(0, ds.indexOf("/")) + "-";
         String day = ds.substring(ds.indexOf("/") + 1, ds.lastIndexOf("/")) + "-";
         String year = ds.substring(ds.lastIndexOf("/")+1);
+        if (day.length() == 2) {day = "0" + day;}
+        if (month.length() == 2) {month = "0" + month;}
         return day + month + year;
     }
 
