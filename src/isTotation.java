@@ -3,6 +3,9 @@ public class isTotation {
     public static void main(String[] args)
     {
         System.out.println(isRotation("abcde", "deabc"));
+        something();
+        String n = "you you you you you are epic";
+        System.out.println(n.replace("you", "90"));
     }
 
     public static boolean isRotation(String s1, String s2)
@@ -16,5 +19,11 @@ public class isTotation {
             System.out.println(s1);
         }
         return false;
+    }
+
+    public static void something()
+    {
+        String n = "wow you are cool";
+        System.out.println(n.substring(0,1));
     }
 }
